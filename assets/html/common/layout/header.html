@@ -1,0 +1,105 @@
+<div class="navbar-wrapper">
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation"> <!-- 1 -->
+        <div class="navbar-header"> <!-- 2 -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><!-- 當螢幕為手機時的折疊按鈕 -->
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="common.main.menu.index">Project name</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- 2 --><!-- 在小螢幕(手機)時會呈現 一個可切換下展的小按鈕(上方設定的按鈕下)，並將原本水平的MENU收在裡頭 -->
+
+            <ul class="nav navbar-nav"> <!-- 3 --><!-- 群組一群Menu選單 -->
+                <li><a ui-sref="common.main.menu.page1" translate="MENU_WITHMENU"></a></li>
+                <li><a ui-sref="common.main.nomenu.page2" translate="MENU_NOMENU"></a></li>
+                <li><a ui-sref="common.main.menu.queryParams({foo: 'testValueFoo', bar: 'testValueBar'})" translate="MENU_QUERY_PARAMETER"></a></li> <!-- 此有要帶查詢參數的 ui-sref 設定方法 -->
+                <li><a ui-sref="common.main.menu.routeParams({id: '001'})" translate="MENU_ROUTE_PARAMETER"></a></li> <!-- 此有要帶路徑參數的 ui-sref 設定方法 -->
+                <li><a ui-sref="common.main.menu.counrty" translate="MENU_COUNRTY_LIST"></a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right"> <!-- 3 --><!-- 群組一群Menu選單(靠右) -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">登入 <span class="caret"></span></a>
+                    <div id="base-login-panel" class="dropdown-menu navbar-inverse" role="menu">
+
+                        <form id="base-login-form" class="form-horizontal" role="form" method="POST" enctype="application/x-www-form-urlencoded" action="">
+                            <!-- Account Field -->
+                            <div class="form-group">
+                                <label class="sr-only" for="#base-login-form-account">帳號</label>
+                                <div class="col-sm-12">
+                                    <input class="form-control" id="base-login-form-account" type="tel" placeholder="帳號（手機號碼）" name="account">
+                                </div>
+                            </div>
+                            <!-- Password Field -->
+                            <div class="form-group">
+                                <label class="sr-only" for="#base-login-form-password">密碼</label>
+
+                                <div class="col-sm-12">
+                                    <input class="form-control" id="base-login-form-password" type="password" placeholder="密碼" name="password">
+                                </div>
+                            </div>
+                            <!-- Buttons and Links -->
+                            <div class="form-group">
+                                <div class="col-xs-6 col-sm-6">
+                                    <a id="forget_pass" class="btn btn-block btn-link base-path-anchor " data-path-goto="forget_pass" href="http://140.92.88.6/v2/forget_pass.html">忘記密碼?</a>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <button type="submit" class="btn btn-block btn-success ">登入</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="divider"></div>
+                        <form id="base-login-form" class="form-horizontal" role="form" method="POST" enctype="application/x-www-form-urlencoded" action="">
+                            <div class="form-group">
+                                <div class="col-xs-4">
+                                    <a class="btn btn-social-icon btn-facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a class="btn btn-social-icon btn-google-plus">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a class="btn btn-social-icon btn-twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right"> <!-- 3 --><!-- 群組一群Menu選單(靠右) -->
+                <li class="dropdown"> <!-- 下拉選單 -->
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="https://www.facebook.com/wang.wang0110" title="動態時報" data-gt="{&quot;chrome_nav_item&quot;:&quot;timeline_chrome&quot;}" accesskey="2"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c31.31.391.391/s50x50/1930253_26283110038_4077_n.jpg?oh=c1588733ea66f430ec50c4c465e0764f&oe=5554CE42&__gda__=1430862481_1e1e6f2a63604876400984718e12597c" alt="" id="profile_pic_header_785580038" style="width: 22px; height: 22px; margin-right: 8px"><span>王郁偉</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu navbar-inverse" role="menu">
+                        <li><a href="#">Action 1</a></li>
+                        <li><a href="#">Action 2</a></li>
+                        <li><a href="#">Action 3</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right"> <!-- 3 --><!-- 群組一群Menu選單(靠右) -->
+                <li class="dropdown"> <!-- 下拉選單 -->
+                    <a class="dropdown-toggle" data-toggle="dropdown" translate="MENU_LANGUAGE">語言<span class="caret"></span></a>
+                    <ul class="dropdown-menu navbar-inverse" role="menu">
+                        <li><a ng-click="changeLanguage('zh-tw')">中文</a></li>
+                        <li><a ng-click="changeLanguage('en')">English</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>

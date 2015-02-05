@@ -1,0 +1,52 @@
+/* 全部區塊 */
+.my-menu, .my-content { /* 每大區塊與下面區塊間距 */
+    margin-bottom: 20px;
+}
+
+
+/*  1.header */
+.navbar {
+    margin-bottom: 0px !important; /* menu不要與下方有間距，覆寫bootstrap的設定 */
+}
+/*  1.header */
+.navbar-right {
+    padding-right: 15px; /* 讓右邊選單可以和container的 padding 15 相抵，不會太靠右 */
+}
+/*  1.header */
+.navbar-inverse>li>a {
+    color: #999 !important; /* menu bar下拉選單內文字顏色 */
+}
+/*  1.header */
+#base-login-panel {
+    padding: 20px; /* 登入區塊下拉div padding */
+    width: 250px; /* 登入區塊下拉div 寬度 */
+}
+
+
+
+/*  2.廣告牆 */
+.carousel-inner > .item > img {
+    margin: 0 auto; /* carousel內照片置中 */
+}
+
+/* 2.廣告牆照片長寬 */
+.item img {
+    max-height: 425px;
+    width: auto;
+    height: auto;
+}
+
+
+/* 3.內容 */
+.content .col-sm-6 , .content .col-lg-4 {
+    margin-bottom: 20px; /* 每個item與下面間距 */
+    text-align: center; /* 每個item內資料置中 */
+    height:360px; /* 每個item固定高度 */
+}
+
+
+/*  4.footer */
+.footer  {
+    text-align: center; /* 每個item內資料置中 */
+}
+

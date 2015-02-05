@@ -1,0 +1,5 @@
+<ul>
+    <li ng-repeat="country in countries">
+        <a ui-sref="common.main.menu.counrty.detail({id: '{{country.name}}'})" ng-click="clickOne(country.name)">{{country.name}}</a> <!-- 如此可帶變數去 事件函數 -->
+    </li>
+</ul>

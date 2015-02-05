@@ -1,0 +1,32 @@
+{
+  "name": "021-App014WithBowerAndGulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-debug": "*",
+    "stream-from-array": "*",
+    "run-sequence": "*",
+    "gulp-concat": "^2.4.3",
+    "gulp-filter": "^2.0.0",
+    "gulp-inject": "^1.1.1",
+    "stream-series": "*",
+    "gulp-ignore": "*",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-order": "^1.1.1",
+    "gulp-uglify": "^1.1.0",
+    "main-bower-files": "^2.5.0",
+    "del": "*",
+    "gulp-minify-css": "*",
+    "gulp-shell": "*",
+    "gulp-html-replace": "1.4.4",
+    "gulp-htmlbuild": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

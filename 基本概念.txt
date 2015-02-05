@@ -1,0 +1,26 @@
+此專案我們將過去完成Angular範例，push至遠端GitHub上，讓他人可以clone下來開始開發
+
+1.在遠端GitHub網站上右上角點選 Create a new repository
+2.我們將專案repository命名為 AngularExample，記得不要勾選 nitialize this repository with a README (因為我們要從本機專案push上去)
+3.點選Create Repository
+4.我們將會看見我們遠端repository URL為 https://github.com/wang490520334/AngularExample.git
+    及相關說明:
+    …or create a new repository on the command line
+        echo # AngularExample >> README.md
+        git init
+        git add README.md
+        git commit -m "first commit"
+        git remote add origin https://github.com/wang490520334/AngularExample.git
+        git push -u origin master
+    …or push an existing repository from the command line
+        git remote add origin https://github.com/wang490520334/AngularExample.git
+        git push -u origin master
+5.於本機專案資料夾內建立一 README.md，用以於GitHub上說明專案，並撰寫些內容
+6.於本機專案資料夾下
+    a.git init (初始git repository)
+    b.git add . (由於我們專案使用webstorm編輯，換行符號有些問題無法add故先執行 git config core.autocrlf false 設定)
+    c.git commit -m "first commit" (於本機repository上commit)
+    d.git remote add origin https://github.com/wang490520334/AngularExample.git  (新加一個遠端repository，其中 orgin 為名稱可自己取)
+    e.git push -u origin master (push到遠端repository上)
+        username輸入 wang490520334
+        password輸入 b8
